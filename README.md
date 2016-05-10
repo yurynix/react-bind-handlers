@@ -30,16 +30,15 @@ Install:
 npm i react-bind-handlers
 ```
 
-Import:
+Import and use:
 ```
 import bindHandlers from 'react-bind-handlers';
-```
-
-Use:
-```
 class Component extends React.Component {}
 export default bindHandlers(Component);
+```
 
-// you can specify regexp selector for handler methods
-export default bindHandlers(Component, regexp);
+```
+import bind from 'react-bind-handlers';
+class Component extends React.Component {}
+export default bind(regExp)(Component);
 ```
