@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/fiolkaf/osync.svg?branch=master)](https://travis-ci.org/fiolkaf/react-bind-handlers)
 # react-bind-handlers
 ### Class decorator which binds class methods to instance, so ```this```  always refers to an instance
 
