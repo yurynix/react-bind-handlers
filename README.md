@@ -22,7 +22,7 @@ class Component extends React.Component {
 export default bindHandlers(Component);
 ```
 
-By default all methods with ```bind*``` prefix will autobind to ```this```
+By default all methods with ```handle*``` prefix will autobind to ```this```
 
 ## How to use:
 
