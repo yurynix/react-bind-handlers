@@ -1,0 +1,237 @@
+{
+    "root": true,
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true,
+        "amd": true,
+        "es6": true
+    },
+    "globals": {
+        "it": true,
+        "describe": true
+    },
+    "rules": {
+        // possible errors
+        "comma-dangle": "off", // TODO
+        "no-cond-assign": "error",
+        "no-console": "error",
+        "no-constant-condition": "error",
+        "no-control-regex": "error",
+        "no-debugger": "error",
+        "no-dupe-args": "error",
+        "no-dupe-keys": "error",
+        "no-duplicate-case": "error",
+        "no-empty": "off", //TODO
+        "no-empty-character-class": "error",
+        "no-ex-assign": "error",
+        "no-extra-boolean-cast": "off", //TODO
+        "no-extra-parens": "off",
+        "no-extra-semi": "error",
+        "no-func-assign": "error",
+        "no-inner-declarations": "error",
+        "no-invalid-regexp": "error",
+        "no-irregular-whitespace": "error",
+        "no-negated-in-lhs": "error",
+        "no-obj-calls": "error",
+        "no-regex-spaces": "error",
+        "no-sparse-arrays": "error",
+        "no-unexpected-multiline": "error",
+        "no-unreachable": "off", //TODO
+        "use-isnan": "error",
+        "valid-jsdoc": "off",
+        "valid-typeof": "error",
+
+        // best practices
+        "accessor-pairs": "off",
+        "array-callback-return": "error",
+        "block-scoped-var": "error",
+        "complexity": ["off", 11], //TODO
+        "consistent-return": "off", //TODO
+        "curly": ["off", "all"], //TODO
+        "default-case": "off",
+        "dot-location": ["error", "property"],
+        "dot-notation": "off",
+        "eqeqeq": "off", //TODO
+        "guard-for-in": "error", //done
+        "no-alert": "error",
+        "no-caller": "error",
+        "no-case-declarations": "error",
+        "no-div-regex": "error",
+        "no-else-return": "off", //TODO
+        "no-empty-function": "off", //related - lodash/use-noop
+        "no-empty-pattern": "error",
+        "no-eq-null": "off", //TODO
+        "no-eval": "error",
+        "no-extend-native": "error",
+        "no-extra-bind": "off", //TODO
+        "no-extra-label": "error",
+        "no-fallthrough": "error",
+        "no-floating-decimal": "error",
+        "no-implicit-coercion": "off", //TODO
+        "no-implicit-globals": "error",
+        "no-implied-eval": "error",
+        "no-invalid-this": "off", // does not work with spine this.proxy
+        "no-iterator": "error",
+        "no-labels": "error",
+        "no-lone-blocks": "error",
+        "no-loop-func": "error",
+        "no-magic-numbers": "off", //TODO
+        "no-multi-spaces": "error",
+        "no-multi-str": "error",
+        "no-native-reassign": "error",
+        "no-new": "off", //TODO
+        "no-new-func": "error",
+        "no-new-wrappers": "error",
+        "no-octal": "error",
+        "no-octal-escape": "error",
+        "no-param-reassign": "off",
+        "no-proto": "error",
+        "no-redeclare": "error",
+        "no-return-assign": "off", //TODO
+        "no-script-url": "error",
+        "no-self-assign": "error",
+        "no-self-compare": "error",
+        "no-sequences": "error",
+        "no-throw-literal": "off", //TODO
+        "no-unmodified-loop-condition": "error",
+        "no-unused-expressions": "error",
+        "no-unused-labels": "error",
+        "no-useless-call": "error",
+        "no-useless-concat": "error",
+        "no-void": "off", //TODO
+        "no-warning-comments": "off", //TODO
+        "no-with": "error",
+        "radix": "off", //TODO
+        "vars-on-top": "off",
+        "wrap-iife": "off", //TODO
+        "yoda": "off",
+
+        // strict mode
+        "strict": "off", // cannot enable as mixed modules and amd.
+                         // Solution is to convert everything to modules
+
+        // variables
+        "init-declarations": "off",
+        "no-catch-shadow": "error",
+        "no-delete-var": "off",
+        "no-label-var": "error",
+        "no-restricted-globals": "off",
+        "no-shadow": "off", //TODO
+        "no-shadow-restricted-names": "error",
+        "no-undef": "error",
+        "no-undef-init": "off",
+        "no-undefined": "off",
+        "no-unused-vars": "off", //TODO
+        "no-use-before-define": "off", //TODO
+
+        // Node.js and CommonJS
+        "callback-return": "off",
+        "global-require": "off",
+        "handle-callback-err": "off",
+        "no-mixed-requires": "off",
+        "no-new-require": "off",
+        "no-path-concat": "off",
+        "no-process-env": "off",
+        "no-process-exit": "off",
+        "no-restricted-modules": "off",
+        "no-sync": "off",
+
+        // stylistic issues
+        "array-bracket-spacing": ["error", "never"],
+        "block-spacing": ["error", "always"],
+        "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+        "camelcase": ["off", {"properties": "always"}], //TODO
+        "comma-spacing": ["error", { "before": false, "after": true }],
+        "comma-style": ["error", "last"],
+        "computed-property-spacing": ["error", "never"],
+        "consistent-this": "off",
+        "eol-last": "error",
+        "func-names": "off",
+        "func-style": ["off", "expression"], //TODO
+        "id-blacklist": "off",
+        "id-length": ["off"], // difficult to enforce
+        "id-match": "off",
+        "indent": ["error",
+            4, { "SwitchCase": 1 } ],
+        "jsx-quotes": ["error", "prefer-double"],
+        "key-spacing": ["off", {"beforeColon": false, "afterColon": true}], //TODO
+        "keyword-spacing": "error",
+        //"linebreak-style": ["error", "windows"],
+        "lines-around-comment": "off",
+        "max-depth": ["error", 6], //TODO, should be 4
+        "max-len": "off", //TODO
+        "max-nested-callbacks": "off", //TODO
+        "max-params": "off", //TODO
+        "max-statements": "off", //TODO
+        "new-cap": "off", //TODO
+        "new-parens": "error",
+        "newline-after-var": "off",
+        "newline-before-return": "off",
+        "newline-per-chained-call": "off",
+        "no-array-constructor": "error",
+        "no-bitwise": "off",
+        "no-continue": "off",
+        "no-inline-comments": "off",
+        "no-lonely-if": "off",
+        "no-mixed-spaces-and-tabs": "error",
+        "no-multiple-empty-lines": "off", //TODO
+        "no-negated-condition": "off", //TODO
+        "no-nested-ternary": "off", //TODO
+        "no-new-object": "error",
+        "no-plusplus": "off",
+        "no-restricted-syntax": "off",
+        "no-spaced-func": "off", //TODO
+        "no-ternary": "off",
+        "no-trailing-spaces": "error",
+        "no-underscore-dangle": "off", //TODO
+        "no-unneeded-ternary": "off", //TODO
+        "no-whitespace-before-property": "error",
+        "object-curly-spacing": ["off", "never"],
+        "one-var": ["error", { "let": "never", "const": "never"}],
+        "one-var-declaration-per-line": "off",
+        "operator-assignment": "off",
+        "operator-linebreak": ["error", "after"],
+        "padded-blocks": "off",
+        "quote-props": "off",
+        "quotes": ["error", "single"],
+        "require-jsdoc": "off",
+        "semi": ["error", "always"],
+        "semi-spacing": "error",
+        "sort-imports": "off",
+        "sort-vars": "off",
+        "space-before-blocks": ["error", "always"],
+        "space-before-function-paren": ["error", "never"],
+        "space-in-parens": ["error", "never"],
+        "space-infix-ops": "error",
+        "space-unary-ops": "error",
+        "spaced-comment": "off",
+        "wrap-regex": "off",
+
+        // ES2015 rules
+        "arrow-body-style": "off",
+        "arrow-parens": "off",
+        "arrow-spacing": "off",
+        "constructor-super": "error",
+        "generator-star-spacing": "off",
+        "no-class-assign": "error",
+        "no-confusing-arrow": "off",
+        "no-const-assign": "error",
+        "no-dupe-class-members": "error",
+        "no-duplicate-imports": "off",
+        "no-new-symbol": "error",
+        "no-restricted-imports": "off",
+        "no-this-before-super": "error",
+        "no-useless-constructor": "off",
+        "no-var": "off",
+        "object-shorthand": "off",
+        "prefer-arrow-callback": "off",
+        "prefer-const": "error",
+        "prefer-reflect": "off",
+        "prefer-rest-params": "off",
+        "prefer-spread": "off",
+        "prefer-template": "off",
+        "require-yield": "off",
+        "template-curly-spacing": "off",
+        "yield-star-spacing": "off"
+    }
+}
