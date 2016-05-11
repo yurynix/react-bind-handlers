@@ -1,3 +1,10 @@
 language: node_js
 node_js:
-  - "node"
+- node
+deploy:
+  provider: npm
+  email: fiolkaf@gmail.com
+  api_key:
+    secure: Ytmf/CgrLBjyHry5PvgV1+DO2qg6FApw3QnsI83mWfhG7hrHNF60mycBiOU1PoTqvC21gCzuNSt4+llbgVEqkIaC1dfI9SdlCa0xkXeyc+p6HhJMXVAfqVXbJY/jPJNSEGYtnAx9z7dfx7Qtyc0n461BBPhfIFJ51jGAerYHNul6Ilczjoyd3pIlrc3cZNVS1rRNPD0Nl+0flPt6dI5Pfamhuenz6jsDwBpVRobvnxo7sNaMGINqtAqO6WWbWovC0YwI+Gj/U0LFBB3IKDerMg1FkOO25nucxfegZnMQx+8905+sXf3HhaffZ1FUVNs6stRjRz4PW4pTJK0WK57xGaYgYXf8HTn9AfjQBo6SQpty3A74psb3FCWuGmOqYMaAvLZwEwo4OUMO6YoezKfHYGpYi/4nol9l6w1fvtYjFn1OHQSbP4QPr0T+PEATQSnqHX56m7IbDxVlbbpqtaOQnY5+6dQ66SdflPtaRFqwnrAZn7W2eEmg0Dkf7m6GaYzp3sbQsiwLjt+udNTSCFfGyvXgCRmf2LxmAfw7J8ZqnVvHm6ICZIpNTGmpOkzxK2s8Gx+/HdSJ2KI1dbt8E++laRXFUDPH/0OlGA8pLUEsSt0UzNh8eBaOo1RbW2tLfL00hyrzzIUfqmUpYWtFa+C1vFNY8whKBINEwwzEwEituFA=
+  on:
+    repo: fiolkaf/react-bind-handlers
