@@ -33,13 +33,13 @@ npm i react-bind-handlers
 
 Import and use:
 ```
-import bindHandlers from 'react-bind-handlers';
+import { bindHandlers } from 'react-bind-handlers';
 class Component extends React.Component {}
 export default bindHandlers(Component);
 ```
 
 ```
-import bind from 'react-bind-handlers';
+import { bind } from 'react-bind-handlers';
 class Component extends React.Component {}
 export default bind(regExp)(Component);
 ```
