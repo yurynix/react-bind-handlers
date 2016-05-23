@@ -1,1 +1,1 @@
-export * from 'src/bindHandlers';
+module.exports = require('./lib/bindHandlers');
