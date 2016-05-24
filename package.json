@@ -3,6 +3,7 @@
   "version": "1.0.3",
   "description": "Binds React component handlers with this context",
   "main": "index.js",
+  "homepage": "https://github.com/fiolkaf/react-bind-handlers",
   "scripts": {
     "test": "./node_modules/.bin/mocha --compilers js:babel-register ./src/bindHandlers-spec.js",
     "eslint": "./node_modules/.bin/eslint --ext .js . --ignore-path .gitignore",
