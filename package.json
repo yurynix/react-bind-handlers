@@ -1,6 +1,6 @@
 {
   "name": "react-bind-handlers",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Binds React component handlers with this context",
   "main": "index.js",
   "homepage": "https://github.com/fiolkaf/react-bind-handlers",
