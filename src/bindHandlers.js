@@ -4,8 +4,8 @@ export function bind(regexp) {
         const handlerNames = keys.filter(key => key.match(regexp));
 
         class Component extends target {
-            constructor(props) {
-                super(props);
+            constructor(...args) {
+                super(...args);
                 handlerNames.forEach(handlerName => this[handlerName] = this[handlerName].bind(this));
             }
         }
