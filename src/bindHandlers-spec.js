@@ -4,6 +4,7 @@ import { bindHandlers, bind } from './bindHandlers';
 describe('bindHandlers class decorator', () => {
 
     class Component {
+	
         constructor() {
             this.value = 'test';
         }
@@ -19,6 +20,10 @@ describe('bindHandlers class decorator', () => {
         handleGetValue() {
             return this ? this.value : null;
         }
+
+	get myHandle() {
+	    return 'bond';	
+	}
     }
 
     it('binds component handler', () => {
@@ -39,5 +44,11 @@ describe('bindHandlers class decorator', () => {
     it('leaves non handlers unbound', () => {
         const { getValue } = new Component();
         expect(getValue(), 'to equal', null);
+    });
+
+    it('should handle non functions', () => {
+        const AutoBoundComponent = bind(/\w/)(Component);
+	const { myHandle } = new AutoBoundComponent();
+	expect( myHandle, 'to equal', 'bond' );
     });
 });
